@@ -111,9 +111,10 @@ line-height: 27px;
 color: #888888;
 }
 article .borderstat2{
+    
     color: white;
     background: #DC9730;
-border-radius: 10.5px;
+    border-radius: 10.5px;
     
 }
 article .retangulos{
