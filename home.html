@@ -5,96 +5,115 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
     <title>LOVT</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <header>
-        <img src="imagens/logos/LOVT.png" alt="homebutton" class="logohead">
-        <img src="imagens/logos/You Love, your loft!.png" alt="homebutton" class="sublogohead">
-        <img src="imagens/logos/Vector.png" alt="homebutton" class="homebutton">
+        <div class="container">
+            <div class="logo">
+                <h1>LOVT</h1>
+                <h2>You Love, <br>
+                    your loft!</h2>
+            </div>
+            <div class="btn-menu">
+                <button>☰</button>
+            </div>
+        </div>
     </header>
     <main>
-        <article>
-            
-          <img src="imagens/img/Rectangle 3.png" alt="image" class="dinamic">
-            
-            <div class="blocos">
-                <div class="bloco1">
-                    <img src="imagens/img/Rectangle 6.png" alt="image" class="imgbl1">
-                    <div class="prst1">
-                        <p id="prbl1">$ 1,200</p>
-                        <div class="borderstat1">
-                            <p id="stat1">NEW</p>
+        <section class="banner">
+            <div class="container">
+                <div class="slide" style="background-image: url('imagens/img/Rectangle\ 3.png')"></div>
+                <div class="fundo">
+                    <a title="fundo">
+                        <img src="imagens\logos/Ellipse 1.png" alt="fundo">
+                    </a>
+                    <a title="fundo">
+                        <img src="imagens\logos/Ellipse 1.png" alt="fundo">
+                    </a>
+                </div>      
+                <div class="controls">
+                    
+                    <a href="#" title="anterior">
+                        <img src="imagens\logos\larrow.png" alt="anterior">
+                    </a>
+                    <a href="#" title="próximo">
+                        <img src="imagens\logos\rarrow.png" alt="próximo">
+                    </a>
+                </div>           
+            </div>
+        </section>
+        <section class="projects">
+            <div class="container">
+                <!-- (article>.thumb+.info)*2 -->
+                <article>
+                    <div class="thumb" style="background-image: url('imagens/img/Rectangle\ 6.png')"></div>
+                    <div class="info">
+                        <div class="flex-between">
+                            <strong class="price">$ 1,200</strong>
+                            <span class="tag tag-green">New</span>
                         </div>
-                       
+                        <p>Mussum Ipsum, cacilds vidis litro abertis. Delegadis gente finis, bibendum egestas augue arcu
+                            ut
+                            est. Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis.
+                            Casamentiss faiz malandris se pirulitá. Cevadis im ampola pa</p>
                     </div>
-
-                    <p id="txb1">Mussum Ipsum, cacilds vidis litro abertis. Delegadis gente finis, bibendum egestas augue
-                        arcu ut est.
-                        Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis.
-                        Casamentiss faiz malandris se pirulitá. Cevadis im ampola pa
-                    </p>
-                </div>
-                <div class="bloco2">
-                    <img src="imagens/img/Rectangle 7.png" alt="image" class="imgbl2">
-                    <div class="prst2">
-                        <p id="prbl2">$ 2,000</p>
-                       <div class="borderstat2">
-                        <p id="stat2">SALE</p>
-                       </div>
-                        
+                </article>
+                <article>
+                    <div class="thumb" style="background-image: url('imagens/img/Rectangle\ 7.png')"></div>
+                    <div class="info">
+                        <div class="flex-between">
+                            <strong class="price">$ 2,000</strong>
+                            <span class="tag  tag-orange">Sale</span>
+                        </div>
+                        <p>Mussum Ipsum, cacilds vidis litro abertis. Em pé sem cair, deitado sem dormir, sentado sem
+                            cochilar e fazendo pose. Nullam volutpat risus nec leo commodo, ut interdum diam laoreet.
+                        </p>
                     </div>
-
-                    <p id="txb2">Mussum Ipsum, cacilds vidis litro abertis. Delegadis gente finis, bibendum egestas augue
-                        arcu ut est.
-                        Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis.
-                        Casamentiss faiz malandris se pirulitá. Cevadis im ampola pa
-                    </p>
-                </div>
-
+                </article>
             </div>
-            <div class="retangulos">
-                <p id="txtr">Your Style</p>
-                <div class="ret1">
-                    <img src="imagens/img/Rectangle 11.png" alt="image" class="recimg1">
-                    <p id="txtret1">Industrial</p>
-                </div>
-                <div class="ret2">
-                    <img src="imagens/img/Rectangle 12.png" alt="image" class="recimg2">
-                    <p id="txtret2">Modern</p>
-                </div>
-                <div class="ret3">
-                    <img src="imagens/img/Rectangle 13.png" alt="image" class="recimg3">
-                    <p id="txtret3">Classic</p>
-                </div>
-
+        </section>
+        <section class="styles">
+            <div class="container">
+                <h2>Your Style</h2>
+                    <article>
+                        <div class="rec" style="background-image: url(imagens/img/Rectangle\ 11.png);" ></div>
+                    <h3>Industrial</h3>
+                    </article>
+                    <article>
+                        <div class="rec" style="background-image: url(imagens/img/Rectangle\ 12.png);" ></div>
+                        <h3>Modern</h3>
+                    </article>
+                    <article>
+                        <div class="rec" style="background-image: url(imagens/img/Rectangle\ 13.png);" ></div>
+                        <h3>Classic</h3>
+                    </article>
             </div>
-        </article>
+        </section>
     </main>
     <footer>
-        <div class="divmap">
-            <img src="imagens/img/image 1.png" alt="image" class="map">
-        </div>
-        <div class="textfooter">
-            <span id="footendress">LOVT - You love, your loft!
-
-                Broad St,
-                Newark, NJ 07102 - USA
-                
-                +1 (973) 854-555-548
-                
-                contact@lovtrealstate.com
-            </span>
-            <div class="logos"></div>
-                 <p id="social">OUR SOCIAL MEDIAS:</p>
-            
-                <img src="imagens/logos/Vector-1.png" alt="instagram">
-                <img src="imagens/logos/Vector-2.png" alt="facebook">
-                <img src="imagens/logos/Vector-3.png" alt="whatsap">
+           <div class="container">
+                <img src="imagens/img/image 1.png" class="map">      
+                <div class="wrap">
+                    <div class="info">
+                        <p>LOVT - You love, your loft!</p>
+        
+                        <p>Broad St, <br>
+                            Newark, NJ 07102 - USA</p>
+        
+                        <p><a href="tel:+1973854555-548">+1 (973) 854-555-548</a></p>
+        
+                        <p><a href="mailto:contact@lovtrealstate.com">contact@lovtrealstate.com</a></p>
+                    </div>
+                    <div class="icons">
+                        <img src="imagens/logos/Vector-1.png" alt="facebook">
+                        <img src="imagens/logos/Vector-2.png" alt="google">
+                        <img src="imagens/logos/Vector-3.png" alt="instagram">
+                    </div>
+                </div>  
             </div>
-        </div>
     </footer>
 </body>
 
