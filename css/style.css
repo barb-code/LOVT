@@ -1,14 +1,96 @@
+
 @import url(https://fonts.googleapis.com/css?family=Ropa+Sans:regular,italic);
 
-.night-mode{
-    background: #444;
+/* modo escuro */
+.night-mode,
+.night-mode header{
+    background-color: #3e3e3e;
+    color: #fff;
 }
-   
+.night-mode section.projects article {
+    background-color: #949494;
+   } 
 
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 400px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.8);
+    align-items: center;
+    justify-content: center;
+    display: none;
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 10px solid orange;
+    height: 70%;
+    width: 40%;
+    text-align: center;
+    font-size: 30px;
+  }
+  
+  .modal-content form input{
+    width: 50%;
+    height: 40px;
+    margin: 7px 0;
+    padding: 5px;
+    text-align: center;
+    border-radius: 6px;
+    border: 1px solid orange;
+
+  }
+
+  .modal-content form button{
+    background-color:white;
+    border-radius: 10px;
+    color:orange;
+    padding: 7px 10px;
+    margin: 20px ;
+    width: 40%;
+    border-color: orange;
+  }
+  .btsubs:hover{
+      background-color: orange;
+      color: white;
+      border: white;
+  }
+  /* The Close Button */
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 50px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  @media (max-width: 1010px) {
+    section.projects .container {
+        padding: 50px;
+        justify-content: center;
+        align-content: center;
+    }
+}
+/* The Modal (background) */
 * {
     box-sizing: border-box;
 }
-
 body {
     padding: 0;
     margin: 0;

@@ -10,9 +10,9 @@
 </head>
 
 <body>
-    <header >
+
+    <header>
         <div class="container">
-            
             <div class="logo">
                 <h1 id="logo">LOVT</h1>
                 <h2>You Love, <br>
@@ -20,21 +20,22 @@
             </div>
 
             <p class="olaUsuario"></p>
-            
+
             <div class="btn-menu">
-                <!-- <button id="night-mode" onclick="myFunction()">Night-Mode</button> --> 
-               
+                <!-- <button id="night-mode" onclick="myFunction()">Night-Mode</button> -->
                 <p> Night-Mode <input id="night-mode" class="lamp" type="checkbox" aria-label="night-mode" /></p>
                 <button>☰</button>
-               
-                               
+                <!-- Trigger/Open The Modal -->
+                <button id="myBtn" onclick="myFunction()">Newsletter</button>
+
             </div>
         </div>
     </header>
     <main>
         <section class="banner">
             <div class="container">
-                <div class="slide" alt="Ambiente de Cozinha" style="background-image: url('imagens/img/Rectangle\ 3.png')"></div>
+                <div class="slide" alt="Ambiente de Cozinha"
+                    style="background-image: url('imagens/img/Rectangle\ 3.png')"></div>
                 <div class="fundo">
                     <a title="fundo">
                         <img src="imagens\logos/Ellipse 1.png" alt="fundo">
@@ -42,23 +43,24 @@
                     <a title="fundo">
                         <img src="imagens\logos/Ellipse 1.png" alt="fundo">
                     </a>
-                </div>      
+                </div>
                 <div class="controls">
-                    
+
                     <a href="#" title="anterior">
                         <img src="imagens\logos\larrow.png" alt="anterior">
                     </a>
                     <a href="#" title="próximo">
                         <img src="imagens\logos\rarrow.png" alt="próximo">
                     </a>
-                </div>           
+                </div>
             </div>
         </section>
         <section class="projects">
             <div class="container">
                 <!-- (article>.thumb+.info)*2 -->
                 <article>
-                    <div class="thumb" alt="Ambiente de Cozinha" style="background-image: url('imagens/img/Rectangle\ 6.png')"></div>
+                    <div class="thumb" alt="Ambiente de Cozinha"
+                        style="background-image: url('imagens/img/Rectangle\ 6.png')"></div>
                     <div class="info">
                         <div class="flex-between">
                             <strong class="price">$ 1,200</strong>
@@ -71,7 +73,8 @@
                     </div>
                 </article>
                 <article>
-                    <div class="thumb" alt="Ambiente sala" style="background-image: url('imagens/img/Rectangle\ 7.png')"></div>
+                    <div class="thumb" alt="Ambiente sala"
+                        style="background-image: url('imagens/img/Rectangle\ 7.png')"></div>
                     <div class="info">
                         <div class="flex-between">
                             <strong class="price">$ 2,000</strong>
@@ -87,44 +90,62 @@
         <section class="styles">
             <div class="container">
                 <h2>Your Style</h2>
-                    <article>
-                        <div class="rec" alt="Ambiente de Cozinha" style="background-image: url(imagens/img/Rectangle\ 11.png); " ></div>
+                <article>
+                    <div class="rec" alt="Ambiente de Cozinha"
+                        style="background-image: url(imagens/img/Rectangle\ 11.png); "></div>
                     <h3>Industrial</h3>
-                    </article>
-                    <article>
-                        <div class="rec" alt="Ambiente de Cozinha" style="background-image: url(imagens/img/Rectangle\ 12.png);" ></div>
-                        <h3>Modern</h3>
-                    </article>
-                    <article>
-                        <div class="rec" style="background-image: url(imagens/img/Rectangle\ 13.png);" ></div>
-                        <h3>Classic</h3>
-                    </article>
+                </article>
+                <article>
+                    <div class="rec" alt="Ambiente de Cozinha"
+                        style="background-image: url(imagens/img/Rectangle\ 12.png);"></div>
+                    <h3>Modern</h3>
+                </article>
+                <article>
+                    <div class="rec" style="background-image: url(imagens/img/Rectangle\ 13.png);"></div>
+                    <h3>Classic</h3>
+                </article>
             </div>
         </section>
     </main>
     <footer>
-           <div class="container">
-                <img src="imagens/img/image 1.png" class="map" alt="mapa geografico">      
-                <div class="wrap">
-                    <div class="info">
-                        <p>LOVT - You love, your loft!</p>
-        
-                        <p>Broad St, <br>
-                            Newark, NJ 07102 - USA</p>
-        
-                        <p><a href="tel:+1973854555-548">+1 (973) 854-555-548</a></p>
-        
-                        <p><a href="mailto:contact@lovtrealstate.com">contact@lovtrealstate.com</a></p>
-                    </div>
-                    <div class="icons">
-                        <img src="imagens/logos/Vector-1.png" alt="facebook">
-                        <img src="imagens/logos/Vector-2.png" alt="google">
-                        <img src="imagens/logos/Vector-3.png" alt="instagram">
-                    </div>
-                </div>  
-            </div>
-    </footer>
+        <div class="container">
+            <img src="imagens/img/image 1.png" class="map" alt="mapa geografico">
+            <div class="wrap">
+                <div class="info">
+                    <p>LOVT - You love, your loft!</p>
 
+                    <p>Broad St, <br>
+                        Newark, NJ 07102 - USA</p>
+
+                    <p><a href="tel:+1973854555-548">+1 (973) 854-555-548</a></p>
+
+                    <p><a href="mailto:contact@lovtrealstate.com">contact@lovtrealstate.com</a></p>
+                </div>
+                <div class="icons">
+                    <img src="imagens/logos/Vector-1.png" alt="facebook">
+                    <img src="imagens/logos/Vector-2.png" alt="google">
+                    <img src="imagens/logos/Vector-3.png" alt="instagram">
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p><strong>Se inscreva no nosso Newsletter!!!</strong></p>
+            <form >
+                <label for="fname">Qual o seu nome?</label><br>
+                <input type="text" id="name" name="name" placeholder="Digite seu nome"><br>
+                <label for="lname">Qual o seu email?</label><br>
+                <input type="text" id="email" name="email" placeholder="Digite seu email"><br>
+                <button class='btsubs'type="submit" >Subscribe</button>
+            </form>
+        </div>
+
+    </div>
     <script src="js/main.js"></script>
 </body>
 
