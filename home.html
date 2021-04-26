@@ -10,22 +10,31 @@
 </head>
 
 <body>
-    <header>
+    <header >
         <div class="container">
+            
             <div class="logo">
-                <h1>LOVT</h1>
+                <h1 id="logo">LOVT</h1>
                 <h2>You Love, <br>
                     your loft!</h2>
             </div>
+
+            <p class="olaUsuario"></p>
+            
             <div class="btn-menu">
+                <!-- <button id="night-mode" onclick="myFunction()">Night-Mode</button> --> 
+               
+                <p> Night-Mode <input id="night-mode" class="lamp" type="checkbox" aria-label="night-mode" /></p>
                 <button>☰</button>
+               
+                               
             </div>
         </div>
     </header>
     <main>
         <section class="banner">
             <div class="container">
-                <div class="slide" style="background-image: url('imagens/img/Rectangle\ 3.png')"></div>
+                <div class="slide" alt="Ambiente de Cozinha" style="background-image: url('imagens/img/Rectangle\ 3.png')"></div>
                 <div class="fundo">
                     <a title="fundo">
                         <img src="imagens\logos/Ellipse 1.png" alt="fundo">
@@ -49,7 +58,7 @@
             <div class="container">
                 <!-- (article>.thumb+.info)*2 -->
                 <article>
-                    <div class="thumb" style="background-image: url('imagens/img/Rectangle\ 6.png')"></div>
+                    <div class="thumb" alt="Ambiente de Cozinha" style="background-image: url('imagens/img/Rectangle\ 6.png')"></div>
                     <div class="info">
                         <div class="flex-between">
                             <strong class="price">$ 1,200</strong>
@@ -62,7 +71,7 @@
                     </div>
                 </article>
                 <article>
-                    <div class="thumb" style="background-image: url('imagens/img/Rectangle\ 7.png')"></div>
+                    <div class="thumb" alt="Ambiente sala" style="background-image: url('imagens/img/Rectangle\ 7.png')"></div>
                     <div class="info">
                         <div class="flex-between">
                             <strong class="price">$ 2,000</strong>
@@ -79,11 +88,11 @@
             <div class="container">
                 <h2>Your Style</h2>
                     <article>
-                        <div class="rec" style="background-image: url(imagens/img/Rectangle\ 11.png);" ></div>
+                        <div class="rec" alt="Ambiente de Cozinha" style="background-image: url(imagens/img/Rectangle\ 11.png); " ></div>
                     <h3>Industrial</h3>
                     </article>
                     <article>
-                        <div class="rec" style="background-image: url(imagens/img/Rectangle\ 12.png);" ></div>
+                        <div class="rec" alt="Ambiente de Cozinha" style="background-image: url(imagens/img/Rectangle\ 12.png);" ></div>
                         <h3>Modern</h3>
                     </article>
                     <article>
@@ -95,7 +104,7 @@
     </main>
     <footer>
            <div class="container">
-                <img src="imagens/img/image 1.png" class="map">      
+                <img src="imagens/img/image 1.png" class="map" alt="mapa geografico">      
                 <div class="wrap">
                     <div class="info">
                         <p>LOVT - You love, your loft!</p>
@@ -115,6 +124,8 @@
                 </div>  
             </div>
     </footer>
+
+    <script src="js/main.js"></script>
 </body>
 
 </html>

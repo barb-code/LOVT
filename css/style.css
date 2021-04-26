@@ -1,5 +1,10 @@
 @import url(https://fonts.googleapis.com/css?family=Ropa+Sans:regular,italic);
 
+.night-mode{
+    background: #444;
+}
+   
+
 * {
     box-sizing: border-box;
 }
@@ -57,6 +62,17 @@ header .btn-menu button {
     font-size: 30px;
     color: #777777;
     cursor: pointer;
+    outline: none;
+}
+
+header .btn-menu button:hover {
+    transition: 0.3s;
+    color: #DC9730;
+}
+
+.btn-menu{
+    display: flex;
+   
 }
 
 header .btn-menu button:hover {
