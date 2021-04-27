@@ -61,6 +61,8 @@
     width: 40%;
     border-color: orange;
   }
+
+   
   .btsubs:hover{
       background-color: orange;
       color: white;
@@ -87,7 +89,50 @@
         align-content: center;
     }
 }
-/* The Modal (background) */
+
+/* The Modal Fim */
+/* Class Contact inicio*/
+.contact  {
+    font-size: 30px;
+    background-color: whitesmoke;
+    display: flex;
+    align-content: center;
+    text-align: center;
+}
+.contact form {
+    width: 300px;
+    max-width: 100%;
+    margin: 10px auto;
+   
+}
+
+.contact form input,
+.contact form textarea {
+    width: 300px;
+    max-width: 100%;
+    margin: 10px auto;
+    text-align: center;
+    font-family: 'Ropa Sans', sans-serif;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+
+}
+
+.contact form button {
+    padding: 10px;
+    margin: 0 auto;
+    display: block;
+    background-color: #DC9730;
+    color: #fff;
+    border: none;
+    text-transform: uppercase;
+    font-family: 'Ropa Sans', sans-serif;
+    border-radius: 20px;
+    font-size: 20px;
+}
+
+/* Class Contact Fim*/
 * {
     box-sizing: border-box;
 }
@@ -152,9 +197,16 @@ header .btn-menu button:hover {
     color: #DC9730;
 }
 
-.btn-menu{
+.btn-menu {
     display: flex;
+    justify-content: space-between;
    
+}
+
+.btn-menu div{
+    display:flex ;
+    flex-direction: column;    
+    flex: 2 1 auto;
 }
 
 header .btn-menu button:hover {
@@ -247,10 +299,6 @@ section.styles .container  {
     
 }
 
-section.styles  article{
-    width: 100%;
-    margin: 20px 0;
-}
 
 section.styles .rec {
     width: 100%;
@@ -259,15 +307,40 @@ section.styles .rec {
     background-size: cover;
     background-repeat: no-repeat;
 }
+section.styles article {
+    position: relative;
+    width: 100%;
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0;
+    border-radius: 10px;
+}
 
 
+section.styles h2 {
+    font-size: 30px;
+    text-align: center;
+}
 
-section.styles h3{
-    color: #FFFFFF;
-    font-size: 35px;
-    letter-spacing: 10px;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
-    
+section.styles article h3 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+    border-radius: 10px;
 }
 
 footer{

@@ -22,12 +22,13 @@
             <p class="olaUsuario"></p>
 
             <div class="btn-menu">
-                <!-- <button id="night-mode" onclick="myFunction()">Night-Mode</button> -->
-                <p> Night-Mode <input id="night-mode" class="lamp" type="checkbox" aria-label="night-mode" /></p>
+                <!--Outra maneira de fazer o botão --.> <button id="night-mode" onclick="myFunction()">Night-Mode</button> -->
                 <button>☰</button>
                 <!-- Trigger/Open The Modal -->
-                <button id="myBtn" onclick="myFunction()">Newsletter</button>
-
+               <div>
+                <button id="myBtn" onclick="myFunction()" style="font-size: 20px;" >Newsletter</button>
+                <p> Night-Mode <input id="night-mode" class="lamp" type="checkbox" aria-label="night-mode" /></p>
+               </div>  
             </div>
         </div>
     </header>
@@ -106,6 +107,21 @@
                 </article>
             </div>
         </section>
+        <section class="contact">
+            <div class="container">
+                <h2>Contact</h2>
+                <form id="form_contact" action="thanks.htmls">
+                    <table width="588" border="0" align="center">
+                    <input type="text" name="nome" id="input_nome" placeholder="Nome" >
+                    <input type="text" name="email" id="input_email" placeholder="Email" >
+                    <input type="text" name="telefone" id="input_telefone" placeholder="Telefone" >
+                    <textarea name="mensagem" id="mensagem" cols="30" rows="10" placeholder="Fale conosco..." ></textarea>
+                    <button type="submit" id="btn-submit-contact" >enviar</button>
+                    </table>
+                    
+                </form>
+            </div>
+        </section>
     </main>
     <footer>
         <div class="container">
@@ -135,7 +151,7 @@
         <!-- Modal content -->
         <div class="modal-content">
             <span class="close">&times;</span>
-            <p><strong>Se inscreva no nosso Newsletter!!!</strong></p>
+            <p id="newsletter"><strong>Se inscreva no nosso Newsletter!!!</strong></p>
             <form >
                 <label for="fname">Qual o seu nome?</label><br>
                 <input type="text" id="name" name="name" placeholder="Digite seu nome"><br>
